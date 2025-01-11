@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body class="bg-warning">
+    <h1>Urun Detayı Sevgilerle..</h1>
+    <h2><%= name %></h2>
+    <img src="/images/<%= imageUrl %>" alt="" width="100">
+    <p><h2>fiyat: <%= price %></h2></p>
+    <p><h2>Stokta Varmı : <% if (isActive) { %>
+     <span>Ürün Stokta Var </span><% } else { %>
+        <span>Ürün Stokta Yok </span>
+    <% } %></h2></p>
+
+</body>
+</html>
