@@ -7,15 +7,41 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
-<body class="bg-warning">
-    <h1>Urun Detayı Sevgilerle..</h1>
-    <h2><%= name %></h2>
-    <img src="/images/<%= imageUrl %>" alt="" width="100">
-    <p><h2>fiyat: <%= price %></h2></p>
-    <p><h2>Stokta Varmı : <% if (isActive) { %>
-     <span>Ürün Stokta Var </span><% } else { %>
-        <span>Ürün Stokta Yok </span>
-    <% } %></h2></p>
-
+<body>
+    <%- include("partials/nav") %>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                 
+                    <div class="card mb-3">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="/images/<%= urun.imageUrl %>" alt=""class="img-fluid"> 
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"><%= urun.name %></h5>
+                                    <p class="card-text"><%= urun.price %></p>
+                                    <p>Lorem ipsum dolor sit amet consectetur, 
+                                        adipisicing elit. Quidem consectetur 
+                                        delectus voluptatum id itaque quae impedit,
+                                        repudiandae animi dignissimos, 
+                                        omnis quo natus quia molestiae inventore commodi 
+                                        sequi quasi tempore cum?</p>
+                                     <p>Lorem ipsum dolor sit amet consectetur, 
+                                        adipisicing elit. Quidem consectetur 
+                                        delectus voluptatum id itaque quae impedit,
+                                        repudiandae animi dignissimos, 
+                                        omnis quo natus quia molestiae inventore commodi 
+                                        sequi quasi tempore cum?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                
+                </div>
+        </div>
+       </div>
 </body>
 </html>
